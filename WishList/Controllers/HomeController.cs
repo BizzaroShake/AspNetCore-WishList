@@ -5,12 +5,12 @@ namespace WishList.Controllers
 {
     public class HomeController
     {
-        public Task<IActionResult> Index()
+        public IActionResult Index()
         {
             return Index();
         }
 
-        public Task<IActionResult> Error()
+        public IActionResult Error()
         {
             return Error();
         }
