@@ -1,26 +1,17 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace WishList.Controllers
 {
-    public class HomeController
+    public class HomeController : Controller
     {
         public IActionResult Index()
         {
-            return Index();
+            return View("Index");
         }
 
         public IActionResult Error()
         {
-            return Error();
-        }
-
-        public Task ExecuteResultAsync(ActionContext context)
-        {
-            throw new NotImplementedException();
+            return View("Error");
         }
     }
-
-
 }
